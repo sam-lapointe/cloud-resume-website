@@ -13,6 +13,8 @@ param storageAccountName string
 
 param appInsightsName string
 
+param databaseName string
+
 
 resource storageAccount 'Microsoft.Storage/storageAccounts@2023-01-01' existing = {
   name: storageAccountName
@@ -20,6 +22,10 @@ resource storageAccount 'Microsoft.Storage/storageAccounts@2023-01-01' existing 
 
 resource appInsights 'Microsoft.Insights/components@2020-02-02' existing = {
   name: appInsightsName
+}
+
+resource database 'Microsoft.DocumentDB/databaseAccounts@2023-09-15' existing = {
+  name: databaseName
 }
 
 resource hostingPlan 'Microsoft.Web/serverfarms@2022-09-01' = {
@@ -69,6 +75,10 @@ resource functionApp 'Microsoft.Web/sites@2022-09-01' = {
         {
           name: 'APPLICATIONINSIGHTS_CONNECTION_STRING'
           value: appInsights.properties.ConnectionString
+        }
+        {
+          name: 'PersonalWebsite_DB_ConnectionString'
+          value: database.listConnectionStrings().connectionStrings[0].connectionString
         }
       ]
       use32BitWorkerProcess: false

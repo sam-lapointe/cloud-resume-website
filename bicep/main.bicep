@@ -61,5 +61,6 @@ module functionApp 'modules/function.bicep' = {
     tags: tags
     storageAccountName: storage.outputs.storageAccountName
     appInsightsName: appInsights.outputs.appInsightsName
+    databaseName: database.outputs.databaseName
   }
 }
