@@ -14,7 +14,6 @@ env:
   AZURE_FUNCTIONAPP_NAME: 'UpdateWebsiteViews'   # set this to your function app name on Azure
   AZURE_FUNCTIONAPP_PACKAGE_PATH: 'backend'       # set this to the path to your function app project, defaults to the repository root
   PYTHON_VERSION: '3.11'                     # set this to the python version to use (e.g. '3.6', '3.7', '3.8')
-  PYTHONPATH: 'backend'
 
 jobs:
   build-and-deploy:
@@ -43,6 +42,11 @@ jobs:
         python -m pip install --upgrade pip
         pip install -r requirements.txt --target=".python_packages/lib/site-packages"
         popd
+
+    - name: 'Set PYTHONPATH'
+      shell: bash
+      run: |
+        echo "PYTHONPATH=backend" >> $GITHUB_ENV
 
     - name: 'Run unit test'
       shell: bash
