@@ -5,7 +5,7 @@ function toggleMenu() {
     icon.classList.toggle("open")
 }
 
-// Send request to the api to get the number of views..
+// Send request to the api to get the number of views.
 async function updateCount(page) {
     const website = "www.slapointe.com";
     let url = `https://api.slapointe.com/api/updateviewscount?website=${website}&page=${page}`;
