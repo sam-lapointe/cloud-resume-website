@@ -43,6 +43,9 @@ jobs:
         pip install -r requirements.txt --target=".python_packages/lib/site-packages"
         popd
 
+    - name: Debug sys.path
+      run: python -c "import sys; print(sys.path)"
+
     - name: 'Set PYTHONPATH'
       shell: bash
       run: |
