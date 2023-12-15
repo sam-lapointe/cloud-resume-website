@@ -4,7 +4,7 @@ from azure.core import exceptions
 import os 
 import logging
 
-# Connect to the CosmosDB Table.
+# Connect to the CosmosDB Table
 CONNECTION_STRING = os.environ["PersonalWebsite_DB_ConnectionString"]
 SERVICE = TableServiceClient.from_connection_string(conn_str=CONNECTION_STRING)
 TABLE = SERVICE.get_table_client(table_name="websites_views")

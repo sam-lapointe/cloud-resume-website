@@ -46,7 +46,7 @@ jobs:
     - name: 'Set PYTHONPATH'
       shell: bash
       run: |
-        echo "PYTHONPATH=/home/runner/work/cloud-resume-website/backend >> $GITHUB_ENV
+        echo "PYTHONPATH=/home/runner/work/cloud-resume-website/backend" >> $GITHUB_ENV
 
     - name: 'Run unit test'
       shell: bash
