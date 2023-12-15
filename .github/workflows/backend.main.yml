@@ -49,7 +49,7 @@ jobs:
     - name: 'Set PYTHONPATH'
       shell: bash
       run: |
-        echo "PYTHONPATH=backend/database" >> "$GITHUB_ENV"
+        echo "PYTHONPATH=/home/runner/work/cloud-resume-website/cloud-resume-website/backend/database" >> "$GITHUB_ENV"
 
     - name: Debug sys.path
       run: python -c "import sys; print(sys.path)"
