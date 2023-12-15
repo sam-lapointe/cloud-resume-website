@@ -43,10 +43,10 @@ jobs:
         pip install -r requirements.txt --target=".python_packages/lib/site-packages"
         popd
 
-    - name: 'Set PYTHONPATH'
+    - name: 'Add Module Path'
       shell: bash
       run: |
-        echo "PYTHONPATH=/home/runner/work/cloud-resume-website/backend" >> $GITHUB_ENV
+        export PYTHONPATH=$PYTHONPATH:/home/runner/work/cloud-resume-website/backend
 
     - name: 'Run unit test'
       shell: bash
