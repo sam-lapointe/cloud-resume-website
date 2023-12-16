@@ -5,9 +5,13 @@ import os
 import logging
 
 # Connect to the CosmosDB Table
-CONNECTION_STRING = os.environ["PersonalWebsite_DB_ConnectionString"]
-SERVICE = TableServiceClient.from_connection_string(conn_str=CONNECTION_STRING)
-TABLE = SERVICE.get_table_client(table_name="websites_views")
+try:
+    CONNECTION_STRING = os.environ["PersonalWebsite_DB_ConnectionString"]
+    SERVICE = TableServiceClient.from_connection_string(conn_str=CONNECTION_STRING)
+    TABLE = SERVICE.get_table_client(table_name="websites_views")
+except KeyError:
+    print("There is no envrionment variables PersonalWebsite_DB_ConnectionString. This is normal when testing.")
+    CONNECTION_STRING = "Testing"
 
 class Entity:
     def __init__(self, website, page):

@@ -43,21 +43,10 @@ jobs:
         pip install -r requirements.txt --target=".python_packages/lib/site-packages"
         popd
 
-    - name: Debug sys.path
-      run: python -c "import sys; print(sys.path)"
-
-    - name: 'Set PYTHONPATH'
-      shell: bash
-      run: |
-        echo "PYTHONPATH=//home//runner//work//cloud-resume-website//cloud-resume-website//backend" >> "$GITHUB_ENV"
-
-    - name: Debug sys.path
-      run: python -c "import sys; print(sys.path)"
-
     - name: 'Run unit test'
       shell: bash
       run : |
-        pushd './${{ env.AZURE_FUNCTIONAPP_PACKAGE_PATH }}/tests'
+        pushd './${{ env.AZURE_FUNCTIONAPP_PACKAGE_PATH }}'
         python test_update_views.py
 
     - name: 'Run Azure Functions Action'

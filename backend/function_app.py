@@ -2,7 +2,7 @@ import azure.functions as func
 import logging
 import json
 
-from database.update_views import Entity
+from update_views import Entity
 
 app = func.FunctionApp(http_auth_level=func.AuthLevel.ANONYMOUS)
 

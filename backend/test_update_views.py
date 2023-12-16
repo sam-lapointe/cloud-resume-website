@@ -1,7 +1,8 @@
 import unittest
+import os
 from unittest.mock import patch, Mock, MagicMock
 
-from database.update_views import Entity
+from update_views import Entity
 
 class TestEntity(unittest.TestCase):
 
