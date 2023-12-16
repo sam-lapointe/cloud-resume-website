@@ -1,5 +1,4 @@
 import unittest
-import os
 from unittest.mock import patch, Mock, MagicMock
 
 from update_views import Entity
