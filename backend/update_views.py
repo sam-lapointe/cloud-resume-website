@@ -1,4 +1,7 @@
+import sys
+print(sys.path)
 from azure.data.tables import TableServiceClient, UpdateMode
+print(sys.path)
 from azure.core import exceptions
 
 import os 
