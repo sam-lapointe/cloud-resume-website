@@ -31,7 +31,7 @@ class Entity:
     
     def update_db(self):
         if (self.entity["views"] == 1):
-            logging.info(f"Creating an entity. PartitionKey: '{self.entity['PartitionKey']}', RowKey: '{self.entity['page']}'")
+            logging.info(f"Creating an entity. PartitionKey: '{self.entity['PartitionKey']}', RowKey: '{self.entity['RowKey']}'")
             TABLE.create_entity(self.entity)
         else:
             TABLE.update_entity(mode=UpdateMode.REPLACE, entity=self.entity)

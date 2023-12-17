@@ -14,7 +14,7 @@ def updateviews(req: func.HttpRequest) -> func.HttpResponse:
     page = req.params.get('page')
 
     views = Entity(website, page)
-    logging.info(entity.entity)
+    logging.info(views.entity)
     views.update_views()
     views.update_db()
 
