@@ -11,6 +11,9 @@
     #profile, .section-container {
         display: block;
     }
+    #contact {
+        height: 40vh
+    }
     .arrow {
         display: none;
     }

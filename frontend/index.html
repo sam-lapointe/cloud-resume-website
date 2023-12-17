@@ -37,22 +37,21 @@
     </nav>
     <section id="profile">
         <div class="section__pic-container">
-            <img src="./assets/profile-pic.png" alt="Samuel Lapointe profile picture">
+            <img src="./assets/profile_picture.jpg" alt="Samuel Lapointe profile picture" class="profile_picture">
         </div>
         <div class="section__text">
             <p class="section__text__p1">Hello, I'm</p>
             <h1 class="title">Samuel Lapointe</h1>
             <p class="section__text__p2">Network Technician</p>
             <div class="btn-container">
-                <button class="btn btn-color-2" onclick="window.open('cvpath')">Download CV</button>
                 <button class="btn btn-color-1" onclick="location.href='./#contact'">Contact</button>
             </div>
             <div id="socials-container">
-                <img src="./assets/linkedin.png" alt="My LinkedIn profile" class="icon" onclick="location.href='https://linkedin.com/'">
-                <img src="./assets/github.png" alt="My Github profile" class="icon" onclick="location.href='https://github.com/'">
+                <img src="./assets/linkedin.png" alt="My LinkedIn profile" class="icon" onclick="window.open('https://www.linkedin.com/in/samuel-lapointe-95b1a2208/', '_blank', 'noopener', 'noreferrer')">
+                <img src="./assets/github.png" alt="My Github profile" class="icon" onclick="window.open('https://github.com/Mugzo'), '_blank', 'noopener', 'noreferrer'">
             </div>
             <div class="views">
-                <p id="views-count">Views: Loading...</p>
+                <p id="views-count">Views: Loading ...</p>
             </div>
         </div>
     </section>
@@ -60,24 +59,35 @@
         <p class="section__text__p1">Get To Know More</p>
         <h1 class="title">About Me</h1>
         <div class="section-container">
-            <div class="section__pic-container">
-                <img src="./assets/about-pic.png" alt="Profile picture" class="about-pic">
-            </div>
             <div class="about-details-container">
                 <div class="about-containers">
                     <div class="details-container">
-                        <img src="./assets/experience.png" alt="Experience Icon" class="icon">
+                        <img src="./assets/education.png" alt="Experience Icon" class="icon">
                         <h3>Experience</h3>
-                        <p>1 year <br>Network Technician</p>
+                        <p><b>February 2023</b> - Present <br> Network Technician at <a href="https://micromedica.com/" target="_blank" rel="noopener noreferrer">Micromedica</a></p>
+                        <p><b>-</b> Helpdesk Support</p>
+                        <p><b>-</b> Maintaining and configuring network infrastructure</p>
+                        <p><b>-</b> Migrating legacy Windows infrastructures to modern environments.</p>
                     </div>
                     <div class="details-container">
-                        <img src="./assets/education.png" alt="Education Icon" class="icon">
-                        <h3>Education</h3>
-                        <p>Microsoft 365 Administrator Certified</p>
+                        <img src="./assets/experience.png" alt="Education Icon" class="icon">
+                        <h3>Certifications</h3>
+                        <div>
+                            <p><b>October 1, 2023</b> - Microsoft 365 Certified: Administrator Expert</p>
+                        </div>
+                        <div>
+                            <p><b>June 22, 2023</b> - Microsoft Certified: Identity and Access Administrator Associate</p>
+                        </div>
+                        <div>
+                            <p><b>April 17, 2023</b> - CompTIA Security+</p>
+                        </div>
+                        <div>
+                            <p><b>February 9, 2023</b> - CompTIA Networking+</p>
+                        </div>
                     </div>
                 </div>
                 <div class="text-container">
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat architecto repellat id amet sed dolores quos rem vero esse quis blanditiis officiis accusamus exercitationem, voluptatum ea iste adipisci quod assumenda, velit dolore. Culpa itaque iure veritatis sapiente voluptatem saepe voluptate ipsa. Possimus at natus dolore ratione perspiciatis qui mollitia temporibus!</p>
+                    <p>I'm Samuel Lapointe, a passionate self-learner with a genuine love for acquiring new knowledge. Eager to deepen my understanding in the dynamic field of technology, I am committed to continuous learning and staying current with technological advancements to offer the best services.</p>
                 </div>
             </div>
         </div>
@@ -85,7 +95,7 @@
     </section>
     <section id="experience">
         <p class="section__text__p1">Explore My</p>
-        <h1 class="title">Experience</h1>
+        <h1 class="title">Skills</h1>
         <div class="experience-details-container">
             <div class="about-containers">
                 <div class="details-container">
@@ -94,43 +104,37 @@
                         <article>
                             <img src="./assets/checkmark.png" alt="Checkmark Icon" class="icon">
                             <div>
-                                <h3>Powershell</h3>
-                                <p>Experienced</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/checkmark.png" alt="Checkmark Icon" class="icon">
-                            <div>
-                                <h3>Python</h3>
-                                <p>Experienced</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/checkmark.png" alt="Checkmark Icon" class="icon">
-                            <div>
-                                <h3>Active Directory</h3>
-                                <p>Experienced</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/checkmark.png" alt="Checkmark Icon" class="icon">
-                            <div>
-                                <h3>Microsoft 365</h3>
-                                <p>Experienced</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/checkmark.png" alt="Checkmark Icon" class="icon">
-                            <div>
                                 <h3>Networking</h3>
-                                <p>Experienced</p>
                             </div>
                         </article>
                         <article>
                             <img src="./assets/checkmark.png" alt="Checkmark Icon" class="icon">
                             <div>
                                 <h3>Security</h3>
-                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Checkmark Icon" class="icon">
+                            <div>
+                                <h3>Active Directory</h3>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Checkmark Icon" class="icon">
+                            <div>
+                                <h3>Microsoft 365</h3>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Checkmark Icon" class="icon">
+                            <div>
+                                <h3>Powershell</h3>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Checkmark Icon" class="icon">
+                            <div>
+                                <h3>Virtualization</h3>
                             </div>
                         </article>
                     </div>
@@ -141,43 +145,37 @@
                         <article>
                             <img src="./assets/checkmark.png" alt="Checkmark Icon" class="icon">
                             <div>
-                                <h3>Azure Virtual Desktop</h3>
-                                <p>Experienced</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/checkmark.png" alt="Checkmark Icon" class="icon">
-                            <div>
-                                <h3>Bicep</h3>
-                                <p>Experienced</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/checkmark.png" alt="Checkmark Icon" class="icon">
-                            <div>
-                                <h3>Powershell and CLI</h3>
-                                <p>Experienced</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/checkmark.png" alt="Checkmark Icon" class="icon">
-                            <div>
-                                <h3>Identity and Access Management</h3>
-                                <p>Experienced</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/checkmark.png" alt="Checkmark Icon" class="icon">
-                            <div>
                                 <h3>Networking</h3>
-                                <p>Experienced</p>
                             </div>
                         </article>
                         <article>
                             <img src="./assets/checkmark.png" alt="Checkmark Icon" class="icon">
                             <div>
                                 <h3>Security</h3>
-                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Checkmark Icon" class="icon">
+                            <div>
+                                <h3>Azure Virtual Desktop</h3>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Checkmark Icon" class="icon">
+                            <div>
+                                <h3>Identity and Access Management</h3>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Checkmark Icon" class="icon">
+                            <div>
+                                <h3>Powershell and CLI</h3>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Checkmark Icon" class="icon">
+                            <div>
+                                <h3>Bicep</h3>
                             </div>
                         </article>
                     </div>
@@ -193,32 +191,29 @@
             <div class="about-containers">
                 <div class="details-container color-container">
                     <div class="article-container">
-                        <img src="./assets/project-1.png" alt="Project 1" class="project-img">
+                        <img src="./assets/avd.png" alt="Azure Virtual Desktop Icon" class="project-img">
                     </div>
-                    <h2 class="experience-sub-title project-title">Project One</h2>
+                    <h2 class="experience-sub-title project-title">Azure Virtual Desktop</h2>
                     <div class="btn-container">
-                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com'">Github</button>
-                        <button class="btn btn-color-2 project-btn" onclick="location.href'https://github.com'">Live Demo</button>
+                        <button class="btn btn-color-2 project-btn" onclick="window.open('https://github.com/Mugzo/AVD_Demo', '_blank', 'noopener', 'noreferrer')">Github</button>
                     </div>
                 </div>
                 <div class="details-container color-container">
                     <div class="article-container">
-                        <img src="./assets/project-2.png" alt="Project 2" class="project-img">
+                        <img src="./assets/cloud-resume-challenge.PNG" alt="Project 2" class="project-img">
                     </div>
-                    <h2 class="experience-sub-title project-title">Project Two</h2>
+                    <h2 class="experience-sub-title project-title">Cloud Resume Challenge</h2>
                     <div class="btn-container">
-                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com'">Github</button>
-                        <button class="btn btn-color-2 project-btn" onclick="location.href'https://github.com'">Live Demo</button>
+                        <button class="btn btn-color-2 project-btn" onclick="window.open('https://github.com/Mugzo/cloud-resume-website', '_blank', 'noopener', 'noreferrer')">Github</button>
                     </div>
                 </div>
                 <div class="details-container color-container">
                     <div class="article-container">
-                        <img src="./assets/project-3.png" alt="Project 3" class="project-img">
+                        <img src="./assets/in_progress.png" alt="Project 3" class="project-img">
                     </div>
-                    <h2 class="experience-sub-title project-title">Project Three</h2>
+                    <h2 class="experience-sub-title project-title">In Progress</h2>
                     <div class="btn-container">
-                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com'">Github</button>
-                        <button class="btn btn-color-2 project-btn" onclick="location.href'https://github.com'">Live Demo</button>
+                        <button class="btn btn-color-2 project-btn" onclick="window.open('https://github.com/Mugzo', '_blank', 'noopener', 'noreferrer')">Github</button>
                     </div>
                 </div>
             </div>
@@ -231,11 +226,11 @@
         <div class="contact-info-upper-container">
             <div class="contact-info-container">
                 <img src="./assets/email.png" alt="Email icon" class="icon contact-icon email-icon">
-                <p><a href="mailto:examplemail@gmail.com">Example@gmail.com</a></p>
+                <p><a href="mailto:samuellapointebusiness@gmail.com">Email Me</a></p>
             </div>
             <div class="contact-info-container">
                 <img src="./assets/linkedin.png" alt="LinkedIn icon" class="icon contact-icon">
-                <p><a href="https://linkedin.com">LinkedIn</a></p>
+                <p><a href="https://www.linkedin.com/in/samuel-lapointe-95b1a2208/" target="_blank" rel="noopener noreferrer">LinkedIn</a></p>
             </div>
         </div>
     </section>

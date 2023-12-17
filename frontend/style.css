@@ -209,6 +209,10 @@ section {
     justify-content: center;
 }
 
+.profile_picture {
+    border-radius: 50%;
+}
+
 /* ICONS */
 
 .icon {
