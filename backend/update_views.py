@@ -6,7 +6,7 @@ import logging
 
 # Connect to the CosmosDB Table.
 try:
-    CONNECTION_STRING = os.environ["PersonalWebsite_DB_ConnectionString"]
+    CONNECTION_STRING = os.environ["DB_ConnectionString"]
     SERVICE = TableServiceClient.from_connection_string(conn_str=CONNECTION_STRING)
     TABLE = SERVICE.get_table_client(table_name="websites_views")
 except KeyError:

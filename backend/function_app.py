@@ -20,4 +20,4 @@ def updateviews(req: func.HttpRequest) -> func.HttpResponse:
 
     return json.dumps({
         "views": views.entity["views"]
-    })
+    })   
