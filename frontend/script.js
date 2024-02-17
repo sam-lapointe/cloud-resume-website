@@ -8,7 +8,7 @@ function toggleMenu() {
 // Send request to the api to get the number of views.
 async function updateCount(page) {
     const website = "www.slapointe.com";
-    let url = `https://api.slapointe.com/api/updateviews?website=${website}&page=${page}`;
+    let url =`https://func-cloudresume-ryupr-apim.azure-api.net/cloudresume/updateviews?website=${website}&page=${page}`
 
     let response = await fetch(url);
 
