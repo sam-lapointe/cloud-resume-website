@@ -16,7 +16,7 @@ resource database 'Microsoft.DocumentDB/databaseAccounts@2023-09-15' = {
     databaseAccountOfferType: 'Standard'
     locations: [
       {
-        locationName: 'Canada East'
+        locationName: location
         failoverPriority: 0
       }
     ]
