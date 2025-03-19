@@ -2,8 +2,6 @@
 
 This repository showcases my implementation of the Cloud Resume Challenge following my successful completion of the AZ-900 certification.
 
-https://www.slapointe.com
-
 ## About the Project
 
 The Cloud Resume Challenge is a popular project among individuals starting their journey into cloud computing. It provides a practical opportunity to apply theoretical knowledge gained from certifications and learning resources.
